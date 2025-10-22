@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Poppins:wght@400;700&display=swap');
+
+$cinza-escuro: #1F2937;
+$cinza-medio: #4B5563;
+$cinza-claro: #B4AEAE;
+$verde-claro: #D2E6D0;
+$branco: #FFF;
+$off-white: #F3F5F8;
+$azul: #2563EB;
+$azul-claro: #BBD2EC;
+$verde-escuro: #16A34A;
+$verde-medio: #21C05C;
+$backgound-site: #93BF85;
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: $off-white;
+}
+
+.header {
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid $cinza-medio;
+
+    .nav {
+        gap: 20px;
+        display: flex;
+        align-items: center;
+
+        .opcao-nav {
+            color: $cinza-medio;
+            transition: 0.3s ease-in-out;
+
+            &:hover {
+                color: $verde-medio;
+            }
+        }
+
+        .btn-comecar-agora {
+            color: $branco;
+            cursor: pointer;
+            padding: 10px 30px;
+            border-radius: 5px;
+            transition: 0.3s ease-in-out;
+            background-color: $verde-escuro;
+
+            &:hover {
+                background-color: $verde-medio;
+            }
+        }
+    }
+}
+
+.secao-sobre-reciclaTech {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .titulo {
+        max-width: 500px;
+        font-size: 40px;
+        color: $cinza-escuro;
+    }
+
+    .sobre-reciclaTech {
+        max-width: 580px;
+        color: $cinza-medio;
+        padding-bottom: 50px;
+    }
+
+    .botoes {
+        gap: 20px;
+        display: flex;
+        align-items: center;
+    }
+
+    .btn-quero-doar {
+        color: $branco;
+        cursor: pointer;
+        padding: 10px 20px;
+        border-radius: 5px;
+        transition: 0.3s ease-in-out;
+        background-color: $verde-escuro;
+
+        &::after {
+            padding-left: 10px;
+            vertical-align: middle;
+            content: url(../icons/icone-btn-doador.svg);
+        }
+
+        &:hover {
+            background-color: $verde-medio;
+        }
+    }
+
+    .btn-quero-adquirir {
+        color: $azul;
+        cursor: pointer;
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: 1px solid $azul;
+        transition: 0.3s ease-in-out;
+
+        &::after {
+            padding-left: 10px;
+            vertical-align: middle;
+            content: url(../icons/icone-btn-adquirente.svg);
+        }
+
+        &:hover {
+            background-color: $azul-claro;
+        }
+    }
+}
+
+.secao-informacoes-de-doacoes {
+    display: flex;
+    padding: 50px 0;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    background-color: $verde-claro;
+
+    .info-doacoes {
+        h3 {
+            font-size: 30px;
+            color: $verde-escuro
+        }
+
+        p {
+            font-size: 14px;
+            color: $cinza-medio;
+        }
+    }
+}
+
+.como-funciona {
+    margin: 30px;
+}
+
+.secao-como-funciona {
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    .card-doacao {
+        padding: 40px;
+        width: 500px;
+        border-radius: 5px;
+
+        h3 {
+            font-size: 25px;
+        }
+
+        .descricao-card {
+            font-size: 14px;
+        }
+
+        ol {
+            counter-reset: lista;
+
+            li {
+                gap: 10px;
+                display: flex;
+                counter-increment: lista;
+                margin: 10px;
+
+                &::before {
+                    width: 25px;
+                    height: 25px;
+                    color: $branco;
+                    display: flex;
+                    border-radius: 50%;
+                    align-items: center;
+                    justify-content: center;
+                    content: counter(lista);
+                }
+            }
+        }
+    }
+
+    .para-doadores {
+        background-color: $verde-claro;
+
+        h3 {
+            color: $verde-escuro;
+
+            &::before {
+                padding-right: 15px;
+                vertical-align: middle;
+                content: url(../icons/icone-doador.svg);
+            }
+        }
+
+        li {
+            &::before {
+                background-color: $verde-escuro;
+            }
+        }
+    }
+
+    .para-adquirentes {
+        background-color: $azul-claro;
+
+        h3 {
+            color: $azul;
+
+            &::before {
+                padding-right: 15px;
+                vertical-align: middle;
+                content: url(../icons/icone-adquirente.svg);
+            }
+        }
+
+        li {
+            &::before {
+                background-color: $azul;
+            }
+        }
+    }
+}
+
+.produtos-disponiveis {
+    margin: 30px;
+}
+
+.secao-produtos-disponiveis {
+    display: flex;
+    justify-content: space-around;
+
+    .card-produtos-populares {
+        max-width: 300px;
+        border-radius: 5px;
+        text-align: center;
+        border: 1px solid $verde-escuro;
+
+        h4 {
+            font-size: 20px;
+        }
+
+        p {
+            max-width: 300px;
+            padding: 10px;
+        }
+
+        .btn-quero-adquirir {
+            color: $branco;
+            padding: 10px 30px;
+            transition: 0.3s ease-in-out;
+            background-color: $verde-escuro;
+            margin-bottom: 30px;
+
+            &:hover {
+                background-color: $verde-medio;
+            }
+        }
+    }
+}
+
+.infos-secao-comentarios {
+    margin: 30px;
+}
+
+.secao-comentarios {
+    display: flex;
+    justify-content: space-around;
+
+    .card-comentario {
+        padding: 20px;
+        border-radius: 5px;
+        border: solid #9CA3AF;
+        border-width: 1px 1px 1px 4px;
+
+        .comentario {
+            height: 120px;
+            max-width: 350px;
+            padding-bottom: 20px;
+        }
+
+        .infos-usuario {
+            gap: 10px;
+            display: flex;
+            font-size: 14px;
+            align-items: center;
+
+            .tipo-de-usuario {
+                color: #4B5563;
+            }
+        }
+    }
+}
+
+.secao-cadastro {
+    display: flex;
+    padding: 50px 0;
+    margin: 50px 0 0 0;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #DCFCE7;
+
+    h2 {
+        color: $cinza-escuro;
+        font-size: 40px;
+    }
+
+    p {
+        max-width: 500px;
+        padding: 20px;
+    }
+
+    .btn-comecar-agora {
+        color: #FFF;
+        padding: 10px 30px;
+        border-radius: 5px;
+        transition: 0.2s ease-in-out;
+        background-color: $verde-escuro;
+
+        &:hover {
+            background-color: #21C05C;
+        }
+    }
+
+    .btn-saber-mais {
+        border: 1px solid #16A34A;
+        color: #16A34A;
+        padding: 10px 30px;
+        border-radius: 5px;
+        transition: 0.2s ease-in-out;
+
+        &:hover {
+            background-color: #21C05C;
+            color: #FFF;
+        }
+    }
+}
+
+.footer {
+    display: flex;
+    line-height: 30px;
+    background-color: $cinza-escuro;
+    justify-content: space-between;
+    padding: 40px 30px 30px 30px;
+    font-family: 'Poppins', sans-serif;
+
+    h5 {
+        font-size: 20px;
+        color: #FFF;
+
+        &::before {
+            content: url(../icons/icone-reciclatech-footer.svg);
+            vertical-align: middle;
+            padding-right: 10px;
+
+        }
+    }
+
+    .texto-footer {
+        max-width: 280px;
+    }
+
+    p {
+        font-weight: 700;
+        color: #FFF;
+    }
+
+    li {
+        color: #9CA3AF;
+    }
+
+    .link-rapido, .suporte {
+        transition: 0.3s ease-in-out;
+        cursor: pointer;
+
+        &:hover {
+            color: $verde-escuro;
+        }
+    }
+
+    .redes-sociais {
+        max-width: 250px;
+    }
+
+}
+
+.copyright {
+    padding: 15px;
+    color: $cinza-medio;
+    text-align: center;
+    background-color: $cinza-escuro;
+    border-top: 1px solid $cinza-claro;
+
+    a {
+        color: $cinza-medio;
+        transition: 0.3s ease-in-out;
+        border-bottom: 1px solid transparent;
+
+        &:hover {
+            color: $verde-medio;
+            border-bottom: 1px solid $verde-escuro;
+        }
+    }
+}

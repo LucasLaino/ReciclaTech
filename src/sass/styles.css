@@ -1,1 +1,333 @@
-/*# sourceMappingURL=styles.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Poppins:wght@400;700&display=swap");
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #F3F5F8;
+}
+
+.header {
+  margin: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #4B5563;
+}
+.header .nav {
+  gap: 20px;
+  display: flex;
+  align-items: center;
+}
+.header .nav .opcao-nav {
+  color: #4B5563;
+  transition: 0.3s ease-in-out;
+}
+.header .nav .opcao-nav:hover {
+  color: #21C05C;
+}
+.header .nav .btn-comecar-agora {
+  color: #FFF;
+  cursor: pointer;
+  padding: 10px 30px;
+  border-radius: 5px;
+  transition: 0.3s ease-in-out;
+  background-color: #16A34A;
+}
+.header .nav .btn-comecar-agora:hover {
+  background-color: #21C05C;
+}
+
+.secao-sobre-reciclaTech {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.secao-sobre-reciclaTech .titulo {
+  max-width: 500px;
+  font-size: 40px;
+  color: #1F2937;
+}
+.secao-sobre-reciclaTech .sobre-reciclaTech {
+  max-width: 580px;
+  color: #4B5563;
+  padding-bottom: 50px;
+}
+.secao-sobre-reciclaTech .botoes {
+  gap: 20px;
+  display: flex;
+  align-items: center;
+}
+.secao-sobre-reciclaTech .btn-quero-doar {
+  color: #FFF;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: 0.3s ease-in-out;
+  background-color: #16A34A;
+}
+.secao-sobre-reciclaTech .btn-quero-doar::after {
+  padding-left: 10px;
+  vertical-align: middle;
+  content: url(../icons/icone-btn-doador.svg);
+}
+.secao-sobre-reciclaTech .btn-quero-doar:hover {
+  background-color: #21C05C;
+}
+.secao-sobre-reciclaTech .btn-quero-adquirir {
+  color: #2563EB;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid #2563EB;
+  transition: 0.3s ease-in-out;
+}
+.secao-sobre-reciclaTech .btn-quero-adquirir::after {
+  padding-left: 10px;
+  vertical-align: middle;
+  content: url(../icons/icone-btn-adquirente.svg);
+}
+.secao-sobre-reciclaTech .btn-quero-adquirir:hover {
+  background-color: #BBD2EC;
+}
+
+.secao-informacoes-de-doacoes {
+  display: flex;
+  padding: 50px 0;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #D2E6D0;
+}
+.secao-informacoes-de-doacoes .info-doacoes h3 {
+  font-size: 30px;
+  color: #16A34A;
+}
+.secao-informacoes-de-doacoes .info-doacoes p {
+  font-size: 14px;
+  color: #4B5563;
+}
+
+.como-funciona {
+  margin: 30px;
+}
+
+.secao-como-funciona {
+  margin: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.secao-como-funciona .card-doacao {
+  padding: 40px;
+  width: 500px;
+  border-radius: 5px;
+}
+.secao-como-funciona .card-doacao h3 {
+  font-size: 25px;
+}
+.secao-como-funciona .card-doacao .descricao-card {
+  font-size: 14px;
+}
+.secao-como-funciona .card-doacao ol {
+  counter-reset: lista;
+}
+.secao-como-funciona .card-doacao ol li {
+  gap: 10px;
+  display: flex;
+  counter-increment: lista;
+  margin: 10px;
+}
+.secao-como-funciona .card-doacao ol li::before {
+  width: 25px;
+  height: 25px;
+  color: #FFF;
+  display: flex;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  content: counter(lista);
+}
+.secao-como-funciona .para-doadores {
+  background-color: #D2E6D0;
+}
+.secao-como-funciona .para-doadores h3 {
+  color: #16A34A;
+}
+.secao-como-funciona .para-doadores h3::before {
+  padding-right: 15px;
+  vertical-align: middle;
+  content: url(../icons/icone-doador.svg);
+}
+.secao-como-funciona .para-doadores li::before {
+  background-color: #16A34A;
+}
+.secao-como-funciona .para-adquirentes {
+  background-color: #BBD2EC;
+}
+.secao-como-funciona .para-adquirentes h3 {
+  color: #2563EB;
+}
+.secao-como-funciona .para-adquirentes h3::before {
+  padding-right: 15px;
+  vertical-align: middle;
+  content: url(../icons/icone-adquirente.svg);
+}
+.secao-como-funciona .para-adquirentes li::before {
+  background-color: #2563EB;
+}
+
+.produtos-disponiveis {
+  margin: 30px;
+}
+
+.secao-produtos-disponiveis {
+  display: flex;
+  justify-content: space-around;
+}
+.secao-produtos-disponiveis .card-produtos-populares {
+  max-width: 300px;
+  border-radius: 5px;
+  text-align: center;
+  border: 1px solid #16A34A;
+}
+.secao-produtos-disponiveis .card-produtos-populares h4 {
+  font-size: 20px;
+}
+.secao-produtos-disponiveis .card-produtos-populares p {
+  max-width: 300px;
+  padding: 10px;
+}
+.secao-produtos-disponiveis .card-produtos-populares .btn-quero-adquirir {
+  color: #FFF;
+  padding: 10px 30px;
+  transition: 0.3s ease-in-out;
+  background-color: #16A34A;
+  margin-bottom: 30px;
+}
+.secao-produtos-disponiveis .card-produtos-populares .btn-quero-adquirir:hover {
+  background-color: #21C05C;
+}
+
+.infos-secao-comentarios {
+  margin: 30px;
+}
+
+.secao-comentarios {
+  display: flex;
+  justify-content: space-around;
+}
+.secao-comentarios .card-comentario {
+  padding: 20px;
+  border-radius: 5px;
+  border: solid #9CA3AF;
+  border-width: 1px 1px 1px 4px;
+}
+.secao-comentarios .card-comentario .comentario {
+  height: 120px;
+  max-width: 350px;
+  padding-bottom: 20px;
+}
+.secao-comentarios .card-comentario .infos-usuario {
+  gap: 10px;
+  display: flex;
+  font-size: 14px;
+  align-items: center;
+}
+.secao-comentarios .card-comentario .infos-usuario .tipo-de-usuario {
+  color: #4B5563;
+}
+
+.secao-cadastro {
+  display: flex;
+  padding: 50px 0;
+  margin: 50px 0 0 0;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #DCFCE7;
+}
+.secao-cadastro h2 {
+  color: #1F2937;
+  font-size: 40px;
+}
+.secao-cadastro p {
+  max-width: 500px;
+  padding: 20px;
+}
+.secao-cadastro .btn-comecar-agora {
+  color: #FFF;
+  padding: 10px 30px;
+  border-radius: 5px;
+  transition: 0.2s ease-in-out;
+  background-color: #16A34A;
+}
+.secao-cadastro .btn-comecar-agora:hover {
+  background-color: #21C05C;
+}
+.secao-cadastro .btn-saber-mais {
+  border: 1px solid #16A34A;
+  color: #16A34A;
+  padding: 10px 30px;
+  border-radius: 5px;
+  transition: 0.2s ease-in-out;
+}
+.secao-cadastro .btn-saber-mais:hover {
+  background-color: #21C05C;
+  color: #FFF;
+}
+
+.footer {
+  display: flex;
+  line-height: 30px;
+  background-color: #1F2937;
+  justify-content: space-between;
+  padding: 40px 30px 30px 30px;
+  font-family: "Poppins", sans-serif;
+}
+.footer h5 {
+  font-size: 20px;
+  color: #FFF;
+}
+.footer h5::before {
+  content: url(../icons/icone-reciclatech-footer.svg);
+  vertical-align: middle;
+  padding-right: 10px;
+}
+.footer .texto-footer {
+  max-width: 280px;
+}
+.footer p {
+  font-weight: 700;
+  color: #FFF;
+}
+.footer li {
+  color: #9CA3AF;
+}
+.footer .link-rapido, .footer .suporte {
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+.footer .link-rapido:hover, .footer .suporte:hover {
+  color: #16A34A;
+}
+.footer .redes-sociais {
+  max-width: 250px;
+}
+
+.copyright {
+  padding: 15px;
+  color: #4B5563;
+  text-align: center;
+  background-color: #1F2937;
+  border-top: 1px solid #B4AEAE;
+}
+.copyright a {
+  color: #4B5563;
+  transition: 0.3s ease-in-out;
+  border-bottom: 1px solid transparent;
+}
+.copyright a:hover {
+  color: #21C05C;
+  border-bottom: 1px solid #16A34A;
+}/*# sourceMappingURL=styles.css.map */
