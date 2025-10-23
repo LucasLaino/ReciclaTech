@@ -10,13 +10,13 @@ $azul: #2563EB;
 $azul-claro: #BBD2EC;
 $verde-escuro: #16A34A;
 $verde-medio: #21C05C;
-$backgound-site: #93BF85;
+$backgound-site: #FFFAF0;
 
 body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: $off-white;
+    background-color: $backgound-site;
 }
 
 .header {
@@ -58,7 +58,7 @@ body {
 .secao-sobre-reciclaTech {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 
     .titulo {
         max-width: 500px;
