@@ -254,6 +254,7 @@ body {
             color: $branco;
             padding: 10px 30px;
             transition: 0.3s ease-in-out;
+            cursor: pointer;
             background-color: $verde-escuro;
             margin-bottom: 30px;
 
@@ -318,6 +319,7 @@ body {
 
     .btn-comecar-agora {
         color: #FFF;
+        cursor: pointer;
         padding: 10px 30px;
         border-radius: 5px;
         transition: 0.2s ease-in-out;
@@ -330,6 +332,7 @@ body {
 
     .btn-saber-mais {
         border: 1px solid #16A34A;
+        cursor: pointer;
         color: #16A34A;
         padding: 10px 30px;
         border-radius: 5px;
