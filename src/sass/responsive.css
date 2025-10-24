@@ -1,0 +1,134 @@
+@media (min-width: 360px) and (max-width: 480px) {
+
+    .header {
+        flex-direction: column;
+        justify-content: center;
+
+        img {
+            width: 60%;
+            padding-bottom: 15px;
+        }
+
+        .nav {
+            gap: 10px;
+            font-size: 12px;
+
+            .btn-comecar-agora {
+                padding: 5px 10px;
+            }
+        }
+    }
+
+    .secao-sobre-reciclaTech {
+        padding: 0 15px;
+        text-align: center;
+        flex-direction: column;
+
+        .titulo {
+            font-size: 30px;
+        }
+
+        .botoes {
+            gap: 10px;
+            justify-content: center;
+
+            .btn-quero-doar {
+                padding: 8px 10px;
+            }
+
+            .btn-quero-adquirir {
+                padding: 5px 10px;
+            }
+        }
+
+        img {
+            width: 90%;
+        }
+    }
+
+    .secao-informacoes-de-doacoes {
+        .info-doacoes {
+            p {
+                font-size: 12px;
+            }
+        }
+    }
+
+    .como-funciona {
+        text-align: center;
+
+        p {
+            font-size: 14px;
+        }
+    }
+
+    .secao-como-funciona {
+        gap: 30px;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+
+
+        .card-doacao {
+            padding: 20px;
+
+            h3 {
+                font-size: 20px;
+            }
+
+            .descricao-card {
+                padding: 10px 0;
+                font-size: 14px;
+                text-align: center;
+            }
+
+            li {
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    .produtos-disponiveis {
+        text-align: center;
+    }
+
+    .secao-produtos-disponiveis {
+        gap: 30px;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .infos-secao-comentarios {
+        text-align: center;
+    }
+
+    .secao-comentarios {
+        gap: 30px;
+        align-items: center;
+        flex-direction: column;
+
+        .card-comentario {
+            width: 340px;
+        }
+    }
+
+    .secao-cadastro {
+        h2 {
+            font-size: 30px;
+        }
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+    .copyright {
+        font-size: 11px;
+        
+        p {
+            padding: 10px;
+        }
+    }
+}

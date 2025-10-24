@@ -7,7 +7,8 @@ body {
 }
 
 .header {
-  margin: 30px;
+  margin: 20px;
+  padding-bottom: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -76,7 +77,7 @@ body {
 .secao-sobre-reciclaTech .btn-quero-adquirir {
   color: #2563EB;
   cursor: pointer;
-  padding: 10px 20px;
+  padding: 8px 20px;
   border-radius: 5px;
   border: 1px solid #2563EB;
   transition: 0.3s ease-in-out;
@@ -119,7 +120,7 @@ body {
 }
 .secao-como-funciona .card-doacao {
   padding: 40px;
-  width: 500px;
+  max-width: 500px;
   border-radius: 5px;
 }
 .secao-como-funciona .card-doacao h3 {
@@ -142,6 +143,7 @@ body {
   height: 25px;
   color: #FFF;
   display: flex;
+  flex-shrink: 0;
   border-radius: 50%;
   align-items: center;
   justify-content: center;
@@ -218,13 +220,12 @@ body {
 }
 .secao-comentarios .card-comentario {
   padding: 20px;
+  max-width: 500px;
   border-radius: 5px;
   border: solid #9CA3AF;
   border-width: 1px 1px 1px 4px;
 }
 .secao-comentarios .card-comentario .comentario {
-  height: 120px;
-  max-width: 350px;
   padding-bottom: 20px;
 }
 .secao-comentarios .card-comentario .infos-usuario {
@@ -284,6 +285,7 @@ body {
   justify-content: space-between;
   padding: 40px 30px 30px 30px;
   font-family: "Poppins", sans-serif;
+  border-bottom: 1px solid #4B5563;
 }
 .footer h5 {
   font-size: 20px;
@@ -302,7 +304,7 @@ body {
   color: #FFF;
 }
 .footer li {
-  color: #9CA3AF;
+  color: #B4AEAE;
 }
 .footer .link-rapido, .footer .suporte {
   transition: 0.3s ease-in-out;
@@ -317,13 +319,12 @@ body {
 
 .copyright {
   padding: 15px;
-  color: #4B5563;
+  color: #B4AEAE;
   text-align: center;
   background-color: #1F2937;
-  border-top: 1px solid #B4AEAE;
 }
 .copyright a {
-  color: #4B5563;
+  color: #B4AEAE;
   transition: 0.3s ease-in-out;
   border-bottom: 1px solid transparent;
 }

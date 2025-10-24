@@ -20,7 +20,8 @@ body {
 }
 
 .header {
-    margin: 30px;
+    margin: 20px;
+    padding-bottom: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -100,7 +101,7 @@ body {
     .btn-quero-adquirir {
         color: $azul;
         cursor: pointer;
-        padding: 10px 20px;
+        padding: 8px 20px;
         border-radius: 5px;
         border: 1px solid $azul;
         transition: 0.3s ease-in-out;
@@ -150,7 +151,7 @@ body {
 
     .card-doacao {
         padding: 40px;
-        width: 500px;
+        max-width: 500px;
         border-radius: 5px;
 
         h3 {
@@ -175,6 +176,7 @@ body {
                     height: 25px;
                     color: $branco;
                     display: flex;
+                    flex-shrink: 0;
                     border-radius: 50%;
                     align-items: center;
                     justify-content: center;
@@ -272,13 +274,12 @@ body {
 
     .card-comentario {
         padding: 20px;
+        max-width: 500px;
         border-radius: 5px;
         border: solid #9CA3AF;
         border-width: 1px 1px 1px 4px;
 
         .comentario {
-            height: 120px;
-            max-width: 350px;
             padding-bottom: 20px;
         }
 
@@ -348,6 +349,7 @@ body {
     justify-content: space-between;
     padding: 40px 30px 30px 30px;
     font-family: 'Poppins', sans-serif;
+    border-bottom: 1px solid $cinza-medio;
 
     h5 {
         font-size: 20px;
@@ -371,7 +373,7 @@ body {
     }
 
     li {
-        color: #9CA3AF;
+        color: $cinza-claro;
     }
 
     .link-rapido, .suporte {
@@ -391,13 +393,12 @@ body {
 
 .copyright {
     padding: 15px;
-    color: $cinza-medio;
+    color: $cinza-claro;
     text-align: center;
     background-color: $cinza-escuro;
-    border-top: 1px solid $cinza-claro;
 
     a {
-        color: $cinza-medio;
+        color: $cinza-claro;
         transition: 0.3s ease-in-out;
         border-bottom: 1px solid transparent;
 
