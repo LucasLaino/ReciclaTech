@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Poppins:wght@400;700&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -309,11 +313,13 @@ body {
 .footer li {
   color: #B4AEAE;
 }
-.footer .link-rapido, .footer .suporte {
+.footer .link-rapido,
+.footer .suporte {
   transition: 0.3s ease-in-out;
   cursor: pointer;
 }
-.footer .link-rapido:hover, .footer .suporte:hover {
+.footer .link-rapido:hover,
+.footer .suporte:hover {
   color: #16A34A;
 }
 .footer .redes-sociais {

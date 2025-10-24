@@ -12,6 +12,10 @@ $verde-escuro: #16A34A;
 $verde-medio: #21C05C;
 $backgound-site: #FFFAF0;
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -379,7 +383,8 @@ body {
         color: $cinza-claro;
     }
 
-    .link-rapido, .suporte {
+    .link-rapido,
+    .suporte {
         transition: 0.3s ease-in-out;
         cursor: pointer;
 
