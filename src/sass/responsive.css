@@ -194,3 +194,51 @@
         font-size: 12px;
     }
 }
+
+@media (min-width: 769px) and (max-width: 1279px) {
+    .secao-sobre-reciclaTech {
+        margin: 20px;
+
+        .titulo {
+            font-size: 30px;
+        }
+
+        .sobre-reciclaTech {
+            width: 415px;
+        }
+
+        img {
+            width: 40%;
+        }
+    }
+
+    .secao-como-funciona {
+        margin: 0;
+
+        .card-doacao {
+            padding: 20px;
+            width: 350px;
+        }
+    }
+
+    .secao-produtos-disponiveis {
+        gap: 10px;
+        margin: 5px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .secao-comentarios {
+        margin: 5px;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .footer {
+        font-size: 14px;
+
+        .redes-sociais {
+            padding: 0 20px;
+        }
+    }
+}
