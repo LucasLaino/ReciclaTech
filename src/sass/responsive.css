@@ -132,3 +132,65 @@
         }
     }
 }
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        justify-content: center;
+        
+        img {
+            padding-bottom: 15px;
+        }
+    }
+
+    .secao-sobre-reciclaTech {
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+
+        .sobre-reciclaTech {
+            width: 500px;
+        }
+        
+        .botoes {
+            justify-content: center;
+        }
+    }
+
+    .como-funciona {
+        text-align: center;
+    }
+
+    .secao-como-funciona {
+        gap: 40px;
+        flex-direction: column;
+    }
+
+    .produtos-disponiveis {
+        text-align: center;
+    }
+
+    .secao-produtos-disponiveis {
+        gap: 40px;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .infos-secao-comentarios {
+        text-align: center;
+    }
+
+    .secao-comentarios {
+        gap: 40px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+    .copyright {
+        font-size: 12px;
+    }
+}

@@ -124,7 +124,7 @@ body {
 }
 .secao-como-funciona .card-doacao {
   padding: 40px;
-  max-width: 500px;
+  width: 500px;
   border-radius: 5px;
 }
 .secao-como-funciona .card-doacao h3 {
