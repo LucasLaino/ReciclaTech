@@ -6,11 +6,11 @@
 ## Informações do Curso 
 - <b>Instituição:</b> Vai na Web
 
-- <b>Curso:</b> Formação BiT - L'oreal
+- <b>Curso:</b> Grupo BiT - L'oreal
 
 - <b>Professores:</b> Kleber Matos, Carol Oliveira e Stéfany Farias
 
-- <b>Autor(a):</b> Lucas laino de Andrade
+- <b>Autor(a):</b> Lucas Laino de Andrade
 
 ## Sobre o Projeto
 > Status: Em desenvolvimento ⌛
@@ -31,33 +31,29 @@ O projeto é uma landing page de um centro de reciclagem fictício que funciona 
 ## Tecnologias Utilizadas
 Este projeto foi construído utilizando apenas as seguintes tecnologias:
 
-HTML5 (para a estrutura semântica do site)
+- HTML5 (para a estrutura semântica do site)
 
-CSS3 (para a estilização, layout com Flexbox e responsividade)
+- CSS3 (para a estilização, layout com Flexbox e responsividade)
 
-SCSS (como pré-processador de CSS)
+- SCSS (como pré-processador de CSS)
 
 ## Como Executar o Projeto
 Como este é estático, não há necessidade de instalação de dependências ou servidores complexos.
 
-Acesse pelo link clicando aqui
+Acesse pelo link [clicando aqui](https://recicla-tech-weld.vercel.app/)
 
 ou
 
-Clone este repositório: git clone [URL_DO_SEU_REPOSITORIO]
+1.Clone este repositório usando o comando: ```git clone https://github.com/LucasLaino/ReciclaTech```
 
-Navegue até a pasta do projeto.
+2.Navegue até a pasta do projeto.
 
-Se você usa o Visual Studio Code, use a extensão Live Server:
+3.Abra a pasta do projeto no editor de código (se você usa o Visual Studio Code, use a extensão Live Server).
 
-Abra a pasta do projeto no VS Code.
+4.Clique com o botão direito no arquivo index.html e selecione a opção "Open with Live Server" (ou utilize o atalho alt + L + O).
 
-Clique com o botão direito no arquivo index.html.
-
-Selecione a opção "Open with Live Server".
-
-O site será aberto automaticamente no seu navegador no endereço http://127.0.0.1:5500.
+5.O site será aberto automaticamente no seu navegador no endereço http://127.0.0.1:5500.
 
 ## Contatos
-- LinkedIn: 
--  E-mail: lucaslaino00@gmail.com
+- LinkedIn: [Lucas Laino](https://www.linkedin.com/in/lucaslaino) 
+- E-mail: [lucaslaino00@gmail.com](mailto:lucaslaino00@gmail.com)
