@@ -13,7 +13,7 @@
 - <b>Autor(a):</b> Lucas Laino de Andrade
 
 ## Sobre o Projeto
-> Status: Em desenvolvimento ⌛
+> Status: Concluído ✅
 
 O projeto é uma landing page de um centro de reciclagem fictício que funciona como uma ponte entre doador e adquirente. Esse projeto é o primeiro desafio técnico proposto pela instituição Vai na Web, com o objetivo de solidificar o conhecimento e prática de HTML, CSS e SCSS.
 
